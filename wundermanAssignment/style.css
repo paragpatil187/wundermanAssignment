@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.headimage{
+    padding:0.2rem
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.profile_desc {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.profile {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding-left: 3rem;
+    width: 30%;
+}
+
+.profile button {
+    padding: 0.5rem 2rem;
+    color:white;
+    background:darkgray;
+    border: 1px solid #fff;
+}
+
+.profile > * {
+    letter-spacing: 1px;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.profile h1 {
+    font-weight: 600;
+}
+
+.solutions {
+    background-color: #eee;
+    padding: 1rem 0 2rem 0;
+}
+
+.campusinfo_heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0, 200, 255, 1);
+    padding: 1.2rem 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.components {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.components .block {
+    width: 25%;
+    padding: 0 0.8rem;
+}
+
+.block .image, .block .info {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.block .info ul {
+    padding: 0 1.25rem;
+    font-size: 0.9em;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image img, .info h1 {
+    margin-bottom: 1rem;
+}
+
+
+.pivot{
+    padding: 0 2.5rem;
+}
+
+.pivot_buttons {
+    padding: 2rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pivot_buttons label {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 1rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.pivots {
+    position: relative;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.advantages .block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.advantages .block .image {
+    width: 55%;
+}
+
+.advantages .block .info {
+    width: 45%;
+    padding: 0 2rem;
+}
+
+
+.instituteslogos {
+    padding-bottom: 3rem;
+}
+
+.instituteslogos .components {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.instituteslogos .components .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 10rem;
+    width: auto;
+     border: 2px solid rgba(0, 0, 0.1, 0.1); 
+    margin: 10px;
+}
+
+.instituteslogos .components .image img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    text-align: center;
+}
+
+footer p {
+    display: block;
+}
+
+footer span {
+    font-weight: 700;
+}
+.scrollArrow{
+    cursor:pointer;
+    background-color: #eee;
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    background: transparent;
+    border:1px solid black
+}
+.scrollArrow i{
+    font-size: 3rem;
+}
+
+
+@media(max-width:499px){
+    .profile {
+        padding-left: 1rem;
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .profile > * {
+        letter-spacing: unset;
+        margin: 5px 0;
+    }
+
+    .profile button {
+        padding: 0.25rem 1rem;
+    }
+
+    .pivot_buttons label {
+        margin: 8px;
+    }
+
+    .advantages .block {
+        padding: 0;
+    }
+
+    .advantages .block:nth-child(1) {
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+
+    .advantages .block:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .advantages .block .image, .advantages .block .info {
+        width: 100%;
+    }
+
+    .advantages .block .info img {
+        display: none;
+    }
+    .components{
+        flex-direction: column;
+        
+    }
+    .components .block{
+        width:100%;
+
+    }
+
+}
+
+   
+
+
